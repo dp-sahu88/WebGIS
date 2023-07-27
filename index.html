@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,31 @@
     <link rel="stylesheet" href="src/CSS/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="map"></div>
+
+    <div id="ctrl">
+        <div> <label for="worldmap" class="ctrlLabel">World map </label>
+            <input type="radio" hidden name="layerctrl" class="layerCtrlBtn" id="worldmap">
+        </div>
+        <div> <label for="bridge" class="ctrlLabel"> Bridge </label>
+            <input type="radio" hidden name="layerctrl" class="layerCtrlBtn" id="bridge">
+        </div>
+        <div> <label for="bharatpur" class="ctrlLabel">Bharatpur </label>
+            <input type="radio" hidden name="layerctrl" class="layerCtrlBtn" id="bharatpur">
+        </div>
+        <div>
+            <label for="naguar" class="ctrlLabel">Naguar</label>
+            <input type="radio" hidden name="layerctrl" class="layerCtrlBtn" id="naguar">
+        </div>
+        <div id="find-me">
+            <label class="ctrlLabel find-me"><img src="data/icon/icons8-location-50.png"> <span>Find me</span>  </label>
+            <input type="radio" hidden name="layerctrl" id="naguar">
+        </div>
+    </div>
+    
     <script type="module" src="src/js/main.js"></script>
 </body>
+
 </html>
